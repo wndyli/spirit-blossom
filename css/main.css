@@ -1,0 +1,139 @@
+body {
+  margin:0px;
+  padding:0px;
+  
+  font-family:'Cormorant Garamond';
+  background:#000;
+  color:#FFF;
+  text-align:center;
+  text-transform:uppercase;
+  letter-spacing:2px;
+  
+  background-image:url('../assets/web-bg2.png');
+  background-repeat:no-repeat;
+  background-size:100% 101%;
+}
+
+#container {
+  width:auto;
+  margin:auto;
+  padding:40px;
+}
+
+@media (min-width:769px) {
+  #container {
+    width:1200px;
+  }
+}
+
+@media (max-width: 520px) {
+  body {
+    background-image:url('assets/mobile-bg2.png');
+    background-repeat:no-repeat;
+    background-size:100%;
+  }
+  
+  #container {
+    width:auto;
+  }
+}
+
+.page-link {
+  width:180px;
+
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, drop-shadow;
+  transition-property: transform, drop-shadow;
+}
+
+.page-link:hover, .page-link:focus, .page-link:active {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.6));
+}
+
+.button {
+    width:75%;
+    margin:0px 18px;
+}
+
+.main-text {
+  font-size:24px;
+  margin:10px 0px 5px 0px;
+  font-weight:600;
+  line-height:100%;
+}
+
+.sub-text {
+  font-size:14px;
+}
+
+.adjust-2 {
+  margin-top:350px;
+}
+
+.adjust-3 {
+  margin-top:150px;
+}
+
+.adjust-4 {
+  margin-top:0px;
+}
+
+#main-1, #main-2, #main-3 {
+  padding:100px 0px 0px 0px;
+  opacity:0;
+  transform:translateY(50px);
+  transition:all 1s ease-out;
+}
+
+#main-3 {
+  padding-bottom:75px;
+}
+
+#main-1.fade-in, #main-2.fade-in, #main-3.fade-in {
+  opacity:1;
+  transform:translateY(0);
+}
+
+#main-1 a, #main-2 a, #main-3 a {
+  color:#fff;
+  text-decoration:none;
+}
+
+@media (max-width: 520px) {
+  #main-1 {
+    padding:50px 0px 0px 50px;
+    width:42%;
+    margin:auto;
+  }
+
+  #main-2 {
+    padding:0px 0px 0px 50px;
+    width:42%;
+    margin:auto;
+  }
+
+  #main-3 {
+    padding:0px 0px 0px 50px;
+    width:42%;
+    margin:auto;
+  }
+}
+
+@media (min-width: 769px) {
+  #main-1, #main-2, #main-3 {
+    display:flex;
+    justify-content:space-between;
+  }
+}
+
+@media (max-width: 520px) {
+  .adjust-2, .adjust-3, .adjust-4 {
+    margin-top:75px;
+  }
+}
+

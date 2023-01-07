@@ -1,0 +1,112 @@
+/* file containts all colors for various pages */
+
+body {
+  margin:0px;
+  padding:0px;
+      
+  font-family:'Cormorant Garamond';
+  color:#fff;
+  text-align:center;
+  letter-spacing:2px;
+}
+    
+#container {
+  width:auto;
+  margin:auto;
+  padding:40px;
+}
+    
+@media (min-width:769px) {
+  #container {
+    width:1200px;
+  }
+}
+    
+@media (max-width: 520px) {
+  #container {
+    width:auto;
+  }
+}
+
+.footer {
+  margin-top:200px;
+  padding:20px;
+}
+
+/* beyond the garden */
+.beyond {
+  background-image:linear-gradient(#b081b5, #763168);
+}
+
+.beyond-footer {
+  background:#a373a9;
+}
+
+/* wandering spirits */
+.wandering {
+  background-image:linear-gradient(#8996bc, #1d4782);
+}
+
+.wandering-footer {
+  background:#6375ab;
+}
+
+/* the path, an ionian myth */
+.thepath {
+  background-image:linear-gradient(#6a4040, #362330);
+}
+
+.thepath-footer {
+  background:#8d5e5e;
+}
+
+/* perennial */
+.perennial {
+  background-image:linear-gradient(#576e89, #303153);
+}
+
+.perennial-footer {
+  background:#58677c;
+}
+
+/* characters */
+.characters {
+  background-image: linear-gradient(#6063a3, #7e497c);
+}
+
+.characters-footer {
+  background:#8d60a3;
+}
+
+/* kin of the stained blade */
+.kin {
+  background-image:linear-gradient(#434c68, #242542);
+}
+
+.kin-footer {
+  background:#585f75;
+}
+
+/* ao shin's adventure */
+.aoshin {
+  background-image:linear-gradient(#55829b, #2e4f64);
+}
+
+.aoshin-footer {
+  background:#55829b;
+}
+
+/* photo gallery */
+.gallery {
+  background-image: linear-gradient(#83509b, #6b3664);
+}
+
+.gallery-footer {
+  background:#83509b;
+}
+
+@media (max-width: 520px) {
+  .footer {
+    margin-top:75px;
+  }
+}

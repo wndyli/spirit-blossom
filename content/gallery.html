@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1"/>
+    
+    <title>Photo Gallery</title>
+    <link rel="icon" type="image/x-icon" href="../assets/open-lotus.png">
+
+    <!-- links to google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300;1,600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/gallery.css">
+    <link rel="stylesheet" href="../css/background.css">
+
+    <script defer src="../js/gallery.js"></script>
+  </head>
+
+  <body class="gallery">
+
+  <div id="container">
+
+    <div class="header">
+      <div class="back">
+        <a href="../main.html#main-3"><img src="../assets/lotus.png" class="back-button" alt="Back Button Lotus Flower">
+        BACK
+      </div></a>
+      
+      <a href="https://www.riotgames.com/en" target="_blank" rel="noopener noreferrer"><img src="../assets/logo.png" class="logo" alt="Riot Games Logo"></a>
+    </div> 
+    
+    <div class="button">
+      <div class="decoration">•</div>
+        <div class="button-text">SPIRIT BLOSSOM</div>
+        <div class="decoration">•</div>
+    </div>  
+
+    <h1>PHOTO GALLERY</h1>
+    
+    <!-- all pictures -->
+    <div class="slideshow-container">
+
+      <div class="slides fade">
+        <img src="../assets/gallery1.png" class="photo" alt="Spirit Blossom 2022 Promo">
+      </div>
+        
+      <div class="slides fade">
+        <img src="../assets/gallery2.png" class="photo" alt="Spirit Blossom Yasuo Concept Picture">
+      </div>
+        
+      <div class="slides fade">
+        <img src="../assets/gallery3.png" class="photo" alt="Spirit Blossom 2020 Promo">
+      </div>
+
+      <div class="slides fade">
+        <img src="../assets/gallery4.png" class="photo" alt="Teamfight Tactics: Fates Promo">
+      </div>
+        
+      <div class="slides fade">
+        <img src="../assets/gallery5.png" class="photo" alt="Spirit Blossom Ahri Concept Picture">
+      </div>
+        
+      <div class="slides fade">
+        <img src="../assets/gallery6.png" class="photo" alt="Spirit Blossom 2020 Legends of Runeterra Illustration">
+      </div>
+        
+      <div class="slides fade">
+        <img src="../assets/gallery7.png" class="photo" alt="Spirit Blossom 2020 Promo">
+      </div>
+        
+      <div class="slides fade">
+        <img src="../assets/gallery8.png" class="photo" alt="Spirit Blossom Kindred Concept Picture">
+      </div>
+
+      <div class="slides fade">
+        <img src="../assets/gallery9.png" class="photo" alt="Spirit Blossom Teemo Concept Picture">
+      </div>
+        
+      <div class="slides fade">
+        <img src="../assets/gallery10.png" class="photo" alt="Spirit Blossom The Path, An Ionian Myth Concept">
+      </div>
+
+      <div class="slides fade">
+        <img src="../assets/gallery11.png" class="photo" alt="Spirit Blossom Evelynn Concept Picture">
+      </div>
+
+      <div class="slides fade">
+        <img src="../assets/gallery12.png" class="photo" alt="Wandering Spirits Concept">
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+        
+    </div>
+    
+    <!-- all bottom dots -->
+    <div class="dot-container">
+      <div class="dot" onclick="currentSlide(1)"></div>
+      <div class="dot" onclick="currentSlide(2)"></div>
+      <div class="dot" onclick="currentSlide(3)"></div>
+      <div class="dot" onclick="currentSlide(4)"></div>
+      <div class="dot" onclick="currentSlide(5)"></div>
+      <div class="dot" onclick="currentSlide(6)"></div>
+      <div class="dot" onclick="currentSlide(7)"></div>
+      <div class="dot" onclick="currentSlide(8)"></div>
+      <div class="dot" onclick="currentSlide(9)"></div>
+      <div class="dot" onclick="currentSlide(10)"></div>
+      <div class="dot" onclick="currentSlide(11)"></div>
+      <div class="dot" onclick="currentSlide(12)"></div>
+    </div> 
+ 
+    <div class="footer gallery-footer">
+        <img src="../assets/lotus.png" class ="footer-image" alt="Lotus Flower in Footer">
+        <div class="footer-text">All information is taken off and inspired by League of Legends by Riot Games.
+          <br>
+          Website created by Wendy Li as a project for 05-430 Programming Usable Interfaces.
+        </div>
+      </div>
+  
+  </div>
+
+  </body>
+</html>

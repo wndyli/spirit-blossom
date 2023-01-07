@@ -1,0 +1,136 @@
+/* growing & glowing animations modified from this tutorial:
+https://ianlunn.github.io/Hover/#
+*/
+
+.header {
+  display:flex;
+  width:inherit;
+  justify-content:space-between;
+}
+      
+.back {
+  font-size:10px;
+  width:30px;
+  text-align:center;
+  color:#fff;
+}
+  
+.back a{
+  color:#fff;
+  text-decoration:none;
+}
+      
+.back-button {
+  width:30px;
+  margin-bottom:2px;
+}
+      
+.logo {
+  width:80px;
+  margin:10px 0px;
+}
+
+.button {
+  width:40%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin:auto;
+  color:#323442;
+  margin-top:50px;
+  
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+  
+.button:hover, .button:focus, .button:active {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+  
+@media (max-width: 520px) {
+  .button {
+      width:80%;
+  }
+}
+  
+.button-text {
+  border-radius:15px;
+  padding:20px;
+  width:80%;
+  letter-spacing:5px;
+  font-size:20px;
+  background:#fdfaf5;
+  box-shadow:0px 0px 10px #bbbde7;
+}
+  
+@media (max-width: 520px) {
+  .button-text {
+    font-size:12px;
+    padding:10px;
+    border-radius:10px;
+    width:60%;
+  }
+}
+  
+.button a {
+  color:#323442;
+  text-decoration:none;
+}
+  
+.decoration {
+  width:10%;
+  color:#fff;
+}
+  
+h1 {
+  text-align:center;
+  font-size:5.5vw;
+  letter-spacing:10px;
+  margin:150px 0px 0px 0px;
+  font-weight:600;
+  
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  text-shadow:0px 0px 10px #bbbde7;
+}
+  
+h1:hover, h1:focus, h1:active {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+@media (max-width: 520px) {
+  h1 {
+    margin-top:75px;
+  }
+}
+  
+.footer-image {
+  width:60px;
+}
+  
+.footer-text {
+  margin-top:10px;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:11px;
+  line-height:140%;
+}
+  
+@media (max-width: 520px) { 
+  .footer-text {
+    font-size:8px;
+  }
+  
+  .footer-image {
+    width:30px;
+  }
+}

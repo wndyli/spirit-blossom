@@ -1,0 +1,93 @@
+/* gallery modified from this tutorial:
+https://www.w3schools.com/howto/howto_js_slideshow.asp */
+
+/* slideshow container */
+.slideshow-container {
+  max-width:1100px;
+  position:relative;
+  margin:75px auto 0px auto;
+}
+
+.photo {
+  width:80%;
+  margin:auto;
+}
+  
+/* next & previous buttons */
+.prev, .next {
+  cursor:pointer;
+  position:absolute;
+  top:50%;
+  width:30px;
+  padding:15px;
+  margin-top:-22px;
+
+  color:white;
+  font-weight:bold;
+  font-size:25px;
+  border-radius:100px;
+  border:1px solid #fff;
+
+  /*user-select:none;*/
+
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow;
+  transition-property: box-shadow;
+}
+
+@media (max-width: 520px) {
+  .prev, .next {
+    font-size:10px;
+    width:12px;
+    padding:5px;
+  }
+}
+
+.prev {
+  left:0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+}
+  
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+}
+ 
+.dot-container {
+  margin-top:50px;
+  text-align:center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height:15px;
+  width:15px;
+  margin:0 2px;
+  background-color:#e2bcef;
+  border-radius:50%;
+  display:inline-block;
+  transition:background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #b96dd8;
+}
+
+.fade {
+  animation-name:fade;
+  animation-duration:1.5s;
+}
+  
+@keyframes fade {
+  from {opacity: .5} 
+  to {opacity: 1}
+}
